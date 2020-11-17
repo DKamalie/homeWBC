@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wooden Bean</title>
+  </head>
+  <body >
+
+    <section class="navigation">
+
+      <div class="logo">
+        <i class="fas fa-mug-hot"></i>
+        <p>The<br>Wooden<br>Bean</p>
+      </div>
+      <div class="home">
+        <a class="home-link" id="homeLink" href="file:///C:/Coffee-shop/index.html">Home</a>
+      </div>
+      <div class="menu">
+        <a class="menu-link" id="hotLink"  href="file:///C:/Coffee-shop/menu.html">Menu</a>
+      </div>
+      <div class="specials">
+        <a class="specials-link" id="hotLink"  onclick = "searchBarFunc()" href="#">SEARCH</a>
+      </div>
+      <div class="about">
+        <a class="about-link" href="file:///C:/Coffee-shop/about.html">About</a>
+      </div>
+
+    </section>
+
+    <section style="display: none;" id="searchingBar" class="searchBar">
+      <form class="sBar" >
+        <input type="text" id="mySearch" onkeyup="searchFunction()" placeholder="Looking for?">
+        <ul id="myMenu">
+  <li><a href="file:///C:/Coffee-shop/menu.html#coffeeSelect">cappuccino</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coffeeSelect">americano</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coffeeSelect">espresso</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coffeeSelect">macchiatto</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coffeeSelect">mocha</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coffeeSelect">latte</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#teaSelect">red cappuccino</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#teaSelect">five roses</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#teaSelect">rooi bos</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#teaSelect">green tea</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coldSelect">water</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coldSelect">tizer</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coldSelect">iced tea</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coldSelect">juice</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coldSelect">smoothies</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coldSelect">milkshakes</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#coldSelect">milo</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#desSelect">waffles</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#desSelect">pancakes</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#desSelect">brownies</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#desSelect">scones</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#desSelect">croissant</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#desSelect">biscuits</a></li>
+  <li><a href="file:///C:/Coffee-shop/menu.html#desSelect">muffins</a></li>
+  <li id="closeSearch" onclick= "closeSearchFunc()">CLOSE SEARCH</li>
+</ul>
+      </form>
+    </section>
+
+    <section class="top-images">
+
+      <div class="show image1">
+        <img src="https://www.liquidesign.co.uk/wp-content/uploads/2018/06/850_6936.jpg" width="100%" height="100%" alt="">
+        <div id="iText" class="main-image-grid imgText">
+          <h1 id="welcomeText" class="introduction t1">The Wooden Bean Cafe</h1>
+          <p id="underText" class="greeting1 t2">Bean feeling down lately?<br>Have a nice warm cup of bean filled with love.</p>
+          <!-- <p class="menubutton"><a href="#menu-link">MENU</a></p> -->
+          <button type="button" onclick="loginPopup()" id="loginExplode">LOGIN</button>
+        </div>
+      </div>
+
+      <section id="ls"class="loginSect" style='display: none;'>
+          <div id="login">
+            <form class="login">
+              <h1 class="lsTitle">LOGIN</h1>
+              <div >
+                <label class="lsEmailLabel" for="email">Email</label>
+                <input class="lsEmail" id="log_email" type="email" name="email" placeholder="Enter Email">
+              </div>
+              <div >
+                <label class="lsPasswordLabel"for="password"> Password</label>
+                <input class="lsPassword" id="log_password" type="password" name="email" placeholder="Enter Password">
+              </div>
+           </form>
+            <button class="lsButton" onclick="logEmailFunc(), logPasswordFunc(), loginSubmit()">LOGIN</button> <br>
+            <p class="rsButtonText">Don't have an account? Click below:</p> <br>
+            <button class="rsButton" type="button" onclick="register()">REGISTER</button>
+          </div>
+
+          <div class="rsTitle" id="register" style="display: none;">
+          <form class="login" action="index.html" method="post">
+            <h1 class="rsTitle">REGISTER</h1>
+            <div>
+              <label class="rsNameLabel" for="reg_name">NAME</label>
+              <input class="rsName"  id="reg_name" type="text" name="reg_name" placeholder="Enter Name">
+            </div>
+            <div >
+              <label class="rsEmailLabel" for="reg_email">Email</label>
+              <input class="rsEmail" id="reg_email" type="email" name="reg_email" placeholder="Enter Email">
+            </div>
+
+            <div >
+              <label class="rsPasswordLabel" for="reg_password">Password</label>
+              <input class="rsPassword" id="reg_password" type="password" name="reg_password" placeholder="Enter Password">
+            </div>
+            <div >
+              <label class="rsPasswordConfirmLabel" for="reg_passwordConfirm">Confirm Password</label>
+              <input class="rsPasswordConfirm" id="reg_passwordConfirm" type="password" name="reg_passwordConfirm" placeholder="Confirm Password">
+            </div>
+
+
+         </form>
+         <button class="rsButton1" onclick="regNameFunc(), regEmailFunc(), regPasswordFunc(), regPasswordConfirmFunc(), registerSubmit()">SUBMIT</button> <br>
+         <p class="rsButtonText">Have an account? Click below to login</p> <br>
+         <button class="rsButton2" type="button" onclick="login()">LOGIN</button>
+          </div>
+      </section>
+
+
+    </section>
+<!--
+    <section class="top-images">
+      <div class="show image1">
+        <img src="./coffee4.png" width="100%" height="100%" alt="">
+
+        <h1 id="introduction">The Wooden Bean Cafe</h1>
+        <p id="greeting1">Bean feeling down lately? Have a nice warm cup of bean filled with love.</p>
+        <p id="menubutton">MENU</p>
+      </div>
+
+    </section> -->
+
+
+    <section class="menu-images bevSect" id="menu-link">
+      <div class="hot-beverages" id="menuDisp">
+        <img src="./images/hotbev.jpg" alt="HOt Beverages" width="100%" height="100%">
+        <div class="hot-bev-text">
+          <h1><a id="hotLink" onclick="hotLinkFunc()" href="file:///C:/Coffee-shop/menu.html">Hot Beverages</a></h1>
+        </div>
+      </div>
+      <div class="cold-beverages" id="menuDisp">
+        <img src="./images/coldbev.jpg" alt="Cold Beverages" width="100%" height="100%">
+        <div class="cold-bev-text">
+          <h1><a id="coldLink" onclick="coldLinkFunc()" href="file:///C:/Coffee-shop/menu.html">Cold Beverages</a></h1>
+        </div>
+      </div>
+      <div class="desserts" id="menuDisp">
+        <img src="./images/dessert.jpg" alt="Desserts" width="100%" height="100%">
+        <div class="dessert-text">
+          <h1><a id="dessertLink" onclick="dessertLinkFunc()" href="file:///C:/Coffee-shop/menu.html">Dessert</a></h1>
+        </div>
+      </div>
+      <div class="special-menu" id="menuDisp">
+        <img src="./images/specials.jpg" alt="Specials" width="100%" height="100%">
+        <div class="special-text">
+          <h1><a id="specialLink" onclick="specialLinkFunc()" href="file:///C:/Coffee-shop/menu.html">Specials</a></h1>
+        </div>
+      </div>
+
+    </section>
+
+    <footer id="footerDisp" >
+      <div class="address">
+        <h1>Address</h1>
+        <ul>
+          <li>232 Sabie Rd</li>
+          <li>De kuilen</li>
+          <li>Kuils River</li>
+          <li>Cape Town</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h1>Contact</h1>
+        <ul>
+          <li>Tel: 021 906 3421</li>
+          <li>Phone: 076 912 2131</li>
+          <li>Facebook: @TheWoodenBean</li>
+          <li>Instagram: The_Wooden_Bean</li>
+        </ul>
+      </div>
+      <div class="value">
+        <h1>We value our customers.</h1>
+        <p>We understand that the difference between good coffee and phenomenal
+        coffee is really important. Therefore, all customers may recieve an
+      extra cup of coffee if they are unsattisfied with the first.</p>
+      </div>
+      <div class="copyright">
+        TheWoodenBean &copy All Rights Should Be Served.
+      </div>
+
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
