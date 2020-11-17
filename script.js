@@ -47,11 +47,11 @@ function loginSubmit() {
     document.getElementById('welcomeText').innerHTML = "Welcome " + document.getElementById('reg_name').value.toUpperCase();
     document.getElementById('underText').innerHTML = "Hey, " + document.getElementById('reg_name').value.toLowerCase() + ". Enjoy your stay :) and check out our menu below:";
     document.getElementById('loginExplode').style.display = "none";
-    document.getElementById('hotLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('coldLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('dessertLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('specialLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('homeLink').href = "file:///C:/Coffee-shop/index.html#";
+    document.getElementById('hotLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('coldLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('dessertLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('specialLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('homeLink').href = "https://dkamalie.github.io/homeWBC/#";
 
   }
 }
@@ -126,11 +126,11 @@ function registerSubmit() {
     document.getElementById('loginExplode').style.display = "none";
 
   }
-    document.getElementById('hotLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('coldLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('dessertLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('specialLink').href = "file:///C:/Coffee-shop/menu.html";
-    document.getElementById('homeLink').href = "file:///C:/Coffee-shop/index.html#";
+    document.getElementById('hotLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('coldLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('dessertLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('specialLink').href = "https://dkamalie.github.io/menuWBC/";
+    document.getElementById('homeLink').href = "https://dkamalie.github.io/homeWBC/#";
 
 }
 
